@@ -58,7 +58,7 @@ const SongControl = ({ audio }) => {
     }
 
     const formatTime = (time) => {
-        if (time == null) return '0:00'
+        if (isNaN(time)) return ''
 
         const seconds = Math.floor(time % 60)
         const minutes = Math.floor(time / 60)
@@ -73,7 +73,7 @@ const SongControl = ({ audio }) => {
             <Slider 
                 defaultValue={[0]} 
                 value={[currentTime]}
-                max={audio?.current?.duration ?? 0} 
+                max={duration} 
                 min={0} 
                 className="w-[500px]" 
                 onValueChange={(value) => {
@@ -153,7 +153,7 @@ export function Player() {
     }
 
     return (
-        <div className="flex flex-row justify-between w-full px-4 z-50">
+        <div className="flex flex-row justify-between w-full px-1 z-50">
             <div className="w-[200px]">
                 <CurrentSong {...currentMusic.song}/>
             </div>
