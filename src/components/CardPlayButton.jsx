@@ -22,7 +22,10 @@ export function CardPlayButton ({ id }) {
     }
 
     return (
-        <button onClick={handleClick} className="card-play-button rounded-full bg-green-500 p-4">
+        <button 
+            onClick={handleClick} 
+            className="card-play-button rounded-full bg-green-500 hover:bg-green-600 hover:scale-105 focus:scale-105 p-4"
+        >
             { isPlayingPlaylist ? <Pause/> : <Play/> }
         </button>
     )

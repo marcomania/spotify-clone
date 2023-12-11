@@ -22,11 +22,11 @@ export const playlists: Playlist[] = [
   {
     id: '2',
     albumId: 2,
-    title: "Lo-Fi Chill Session",
+    title: "NewJeans 1st EP 'New Jeans'",
     color: colors.green,
     cover:
-      "https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187",
-    artists: ["Kupla", "Blue Fox"],
+      "https://e-cdn-images.dzcdn.net/images/cover/a87d8380756567e6bc1f65d43ac2b46d/500x500-000000-80-0-0.jpg",
+    artists: ["New Jeans", "Blue Fox"],
   },
   {
     id: '3',
@@ -141,11 +141,11 @@ export const songs: Song[] = [
   {
     "id": 1,
     "albumId": 2,
-    "title": "Silent Rain",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
-    "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
-    "duration": "3:40"
+    "title": "Attention",
+    "image": `https://f4.bcbits.com/img/a2649011526_16.jpg`,
+    "artists": ["New Jeans"],
+    "album": "NewJeans 1st EP 'New Jeans'",
+    "duration": "3:00"
   },
   {
     "id": 2,
